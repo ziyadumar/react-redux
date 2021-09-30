@@ -1,0 +1,26 @@
+.navbar {
+    height: 5rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid teal;
+    img {
+        width: 20%;
+        height: 100%;
+    }
+    .stats {
+        height: 100%;
+        background-color: blue;
+        width: 30%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        .title {
+            width: 60%;
+        }
+        .count {
+            width: 40%;
+        }
+    }
+}
