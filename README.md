@@ -1,4 +1,10 @@
-# Getting Started with Create React App
+# What's the point
+This is a simple app to depict some use cases, as a ready-made app for interview based references, with my personal understanding and implementation of React.
+
+#### Dependencies `npm packages`
+`typescript` `redux` `react-redux` `react-router-dom` `node-sass` `styled-components` `yup`
+
+Note: gave zero consideration to UI and aesthetics
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -29,21 +35,3 @@ Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-npm install redux react-redux
-npm install -D @types/redux @types/react-redux

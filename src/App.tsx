@@ -1,23 +1,23 @@
-import React from 'react';
-import logo from './logo.svg';
 import './App.css';
-import { useDispatch, useSelector } from 'react-redux';
-import allReducers from './reducers';
-import { decrement, increment } from './actions';
-import { useAppDispatcher, useAppSelector } from './hooks';
+import PostListPage from './Pages/Post-List/Homepage';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import Navbar from './Components/Navbar/Navbar';
+import { useAppDispatcher, useAppSelector } from './Store/hooks';
+import Homepage from './Pages/Home/Home';
 
 function App() {
   const counter = useAppSelector(state => state.counter);
   const dispatch = useAppDispatcher();
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        Hello World {counter}
-        <button onClick={() => dispatch(increment(5))}>+</button>
-        <button onClick={() => dispatch(decrement())}>-</button>
-      </header>
-    </div>
+    <Router>
+      <div className="App">
+        <Navbar />
+        <Switch>
+          <Route path='/' exact component={Homepage} />
+          <Route path='/posts' component={PostListPage} />
+        </Switch>
+      </div>
+    </Router>
   );
 }
 

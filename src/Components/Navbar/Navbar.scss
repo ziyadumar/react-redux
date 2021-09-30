@@ -1,10 +1,13 @@
 .navbar {
+    position: sticky;
+    top: 0;
     height: 5rem;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
     border: 1px solid teal;
+    background-color: white;
     img {
         width: 20%;
         height: 100%;
