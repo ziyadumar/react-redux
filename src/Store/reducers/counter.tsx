@@ -1,6 +1,6 @@
 import { Actions } from "../actions";
 
-const counter = (state: number = 45, action: Action) => {
+const counter = (state: number = 0, action: Action) => {
     switch (action.type) {
         case Actions.INCREMENT:
             return state + action.payload;

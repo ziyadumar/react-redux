@@ -1,4 +1,9 @@
-export const increment = (payload: number) => {
+
+export enum Actions {
+    INCREMENT = 'Increment',
+    DECREMENT = 'Decrement'
+}
+export const increment = (payload: number = 1) => {
     return {
         type: Actions.INCREMENT,
         payload
@@ -13,8 +18,4 @@ export const decrement = () => {
 
 
 
-export enum Actions {
-    INCREMENT = 'Increment',
-    DECREMENT = 'Decrement'
-}
 
