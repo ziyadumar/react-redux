@@ -7,7 +7,7 @@ import { PostModel } from '../../Interfaces/post.model';
 import { useAppDispatcher } from '../../Store/hooks';
 import { fetchData } from './HomeLogic';
 
-const Homepage = () => {
+const PostListPage = () => {
 
     // custom dispatch call
     const dispatch = useAppDispatcher();
@@ -36,4 +36,4 @@ const Homepage = () => {
     )
 }
 
-export default Homepage
+export default PostListPage
