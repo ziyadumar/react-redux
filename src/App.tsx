@@ -4,10 +4,11 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Navbar from './Components/Navbar/Navbar';
 import { useAppDispatcher, useAppSelector } from './Store/hooks';
 import Homepage from './Pages/Home/Home';
+import UserListPage from './Pages/User-List/UserListpage';
 
 function App() {
-  const counter = useAppSelector(state => state.counter);
-  const dispatch = useAppDispatcher();
+  // const counter = useAppSelector(state => state.counter);
+  // const dispatch = useAppDispatcher();
   return (
     <Router>
       <div className="App">
@@ -15,6 +16,7 @@ function App() {
         <Switch>
           <Route path='/' exact component={Homepage} />
           <Route path='/posts' component={PostListPage} />
+          <Route path='/users' component={UserListPage} />
         </Switch>
       </div>
     </Router>
