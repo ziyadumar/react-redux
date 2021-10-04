@@ -6,8 +6,8 @@ const Cat = ({ cat }: { cat: CatModel }) => {
         <div className="Container">
             <img className="Container__image" src={cat.image?.url} alt='' />
 
-            <h2 className="Container__h2">{cat.origin}</h2>
-            <p className="Container__p">{cat.name}</p>
+            <h2 className="Container__h2">{cat.name}</h2>
+            <p className="Container__p">{cat.origin}</p>
         </div>
     )
 }

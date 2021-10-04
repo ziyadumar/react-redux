@@ -1,6 +1,7 @@
 import logo from '../../logo.svg';
 import { useAppDispatcher, useAppSelector } from '../../Store/hooks';
 import { decrement, increment } from '../../Store/actions';
+import { Button } from '../../Components/styled-components/Button.style';
 
 const Homepage = () => {
     const counter = useAppSelector(state => state.counter);
@@ -8,9 +9,11 @@ const Homepage = () => {
     return (
         <header className="App-header">
             <img src={logo} className="App-logo" alt="logo" />
-            Hello World {counter}
-            <button onClick={() => dispatch(increment(5))}>+5</button>
-            <button onClick={() => dispatch(decrement())}>-</button>
+            Redux {counter}
+            <div className="btn-area">
+                <Button background-color='grey' onClick={() => dispatch(decrement())}>-</Button>
+                <Button background-color='grey' onClick={() => dispatch(increment(5))}>+5</Button>
+            </div>
         </header>
     )
 }
