@@ -1,0 +1,33 @@
+.Container {
+    background: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    &__image {
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        margin: 0 0 8px;
+    }
+    &__h2 {
+        color: #fff;
+        font-size: 36px;
+        font-weight: 700;
+        letter-spacing: -1.8px;
+        line-height: 46px;
+        text-shadow: 0 2px 4px rgb(71 97 206 / 36%);
+        position: relative;
+        top: 4px;
+    }
+    &__p {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 23px;
+        letter-spacing: -0.9px;
+        color: #fff;
+        text-shadow: 0 2px 4px rgb(71 97 206 / 36%);
+    }
+}

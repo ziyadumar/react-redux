@@ -15,6 +15,12 @@ const Navbar = () => {
                     </div>
                 </div>
             </Link >
+            <Link to={'/cats'} className='link'>
+                <div className="box-1">
+                    <div className="btn btn-one">
+                        <span>CATS</span>
+                    </div>
+                </div></Link>
             <Link to={'/posts'} className='link'>
                 <div className="box-1">
                     <div className="btn btn-one">

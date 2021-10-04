@@ -5,6 +5,7 @@ import Navbar from './Components/Navbar/Navbar';
 import { useAppDispatcher, useAppSelector } from './Store/hooks';
 import Homepage from './Pages/Home/Home';
 import UserListPage from './Pages/User-List/UserListpage';
+import CatsPage from './Pages/Cats/CatsPage';
 
 function App() {
   // const counter = useAppSelector(state => state.counter);
@@ -15,6 +16,7 @@ function App() {
         <Navbar />
         <Switch>
           <Route path='/' exact component={Homepage} />
+          <Route path='/cats' component={CatsPage} />
           <Route path='/posts' component={PostListPage} />
           <Route path='/users' component={UserListPage} />
         </Switch>
