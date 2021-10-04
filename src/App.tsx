@@ -1,5 +1,5 @@
 import './App.css';
-import PostListPage from './Pages/Post-List/Homepage';
+import PostListPage from './Pages/Post-List/Postpage';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Navbar from './Components/Navbar/Navbar';
 import { useAppDispatcher, useAppSelector } from './Store/hooks';

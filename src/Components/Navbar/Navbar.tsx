@@ -35,8 +35,8 @@ const Navbar = () => {
                 </div></Link>
             <div className='stats'>
                 <article className="card">
-                    <span className="background"></span>
-                    <span className="icon uil uil-instagram"></span>
+                    {/* <span className="background"></span>
+                    <span className="icon uil uil-instagram"></span> */}
                     <span className="content">
                         {counter} Clicks
                     </span>

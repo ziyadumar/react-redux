@@ -5,7 +5,8 @@ import PostList from '../../Components/Post/PostList';
 import useSize from '../../Hooks/screenSize';
 import { PostModel } from '../../Interfaces/post.model';
 import { useAppDispatcher } from '../../Store/hooks';
-import { fetchData } from './HomeLogic';
+import { fetchData } from './PostsLogic';
+import './Posts.scss'
 
 const PostListPage = () => {
 
@@ -26,11 +27,11 @@ const PostListPage = () => {
 
     return (
         <>
-            <div>
-                Something for the Homepage
+            
+            <div className="btn-area">
+                <Button background-color='green' onClick={() => dispatch(increment())}>+</Button>
+                <Button background-color={onSmallScreen ? 'red ' : 'yellow'} onClick={() => dispatch(decrement())}>-</Button>
             </div>
-            <Button background-color='green' onClick={() => dispatch(increment())}>+</Button>
-            <Button background-color={onSmallScreen ? 'red ' : 'yellow'} onClick={() => dispatch(decrement())}>-</Button>
             <PostList list={posts} />
         </>
     )
